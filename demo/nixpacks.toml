@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["openjdk", "gradle"]
+
+[phases.build]
+cmds = ["gradle build"]
+
+[start]
+cmd = "java -jar build/libs/*.jar"
